@@ -1,173 +1,173 @@
 @import "tailwindcss";
 
 body {
-  margin: 0;
-  overflow-x: hidden;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* Leaflet container fix for dark theme */
 .leaflet-container {
-  background: #0f172a;
+    background: #0f172a;
 }
 
 /* Pulse animation for waiting project markers */
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50% { transform: scale(1.4); opacity: 0.1; }
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.4); opacity: 0.1; }
 }
 
 /* Glow pulse for urgent items */
 @keyframes urgentPulse {
-  0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
-  50% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); }
+    0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); }
 }
 
 /* Slide in from bottom */
 @keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 /* Slide in from right */
 @keyframes slideInRight {
-  from { transform: translateX(100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 /* Fade in */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Scale pop */
 @keyframes popIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  70% { transform: scale(1.05); }
-  100% { transform: scale(1); opacity: 1; }
+    0% { transform: scale(0.8); opacity: 0; }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 /* Achievement toast */
 @keyframes achievementSlide {
-  0% { transform: translateY(-100%); opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  90% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-100%); opacity: 0; }
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    90% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100%); opacity: 0; }
 }
 
 /* Shimmer for loading/premium feel */
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
 }
 
 /* Bounce for notifications */
 @keyframes bounceIn {
-  0% { transform: translateX(-50%) scale(0.3); opacity: 0; }
-  50% { transform: translateX(-50%) scale(1.05); }
-  70% { transform: translateX(-50%) scale(0.9); }
-  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+    0% { transform: translateX(-50%) scale(0.3); opacity: 0; }
+    50% { transform: translateX(-50%) scale(1.05); }
+    70% { transform: translateX(-50%) scale(0.9); }
+    100% { transform: translateX(-50%) scale(1); opacity: 1; }
 }
 
 .animate-slide-up {
-  animation: slideUp 0.3s ease-out;
+    animation: slideUp 0.3s ease-out forwards;
 }
 
 .animate-slide-right {
-  animation: slideInRight 0.3s ease-out;
+    animation: slideInRight 0.3s ease-out forwards;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s ease-out;
+    animation: fadeIn 0.3s ease-out forwards;
 }
 
 .animate-pop-in {
-  animation: popIn 0.3s ease-out;
+    animation: popIn 0.3s ease-out forwards;
 }
 
 .animate-achievement {
-  animation: achievementSlide 4s ease-in-out forwards;
+    animation: achievementSlide 4s ease-in-out forwards;
 }
 
 .animate-bounce-in {
-  animation: bounceIn 0.4s ease-out;
+    animation: bounceIn 0.4s ease-out forwards;
 }
 
 /* Premium gradient text */
 .text-gradient {
-  background: linear-gradient(135deg, #f97316, #fbbf24, #f97316);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
+    background: linear-gradient(135deg, #f97316, #fbbf24, #f97316);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
 }
 
 /* Glass morphism panels */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Scrollbar styling */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
+    width: 4px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.3);
-  border-radius: 2px;
+    background: rgba(148, 163, 184, 0.3);
+    border-radius: 2px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.5);
+    background: rgba(148, 163, 184, 0.5);
 }
 
 /* Button hover glow */
 .btn-glow:hover {
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
 }
 
 /* Card hover effect */
 .card-hover {
-  transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 .card-hover:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Stat counter animation */
 @keyframes countUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Map marker bounce */
 @keyframes markerBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
 }
 
 /* Progress bar stripe animation */
 @keyframes progressStripe {
-  0% { background-position: 0 0; }
-  100% { background-position: 30px 0; }
+    0% { background-position: 0 0; }
+    100% { background-position: 30px 0; }
 }
 
 .progress-striped {
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.1) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0.1) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 30px 30px;
-  animation: progressStripe 1s linear infinite;
+    background-image: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.1) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.1) 50%,
+          rgba(255, 255, 255, 0.1) 75%,
+          transparent 75%,
+          transparent
+        );
+    background-size: 30px 30px;
+    animation: progressStripe 1s linear infinite;
 }
