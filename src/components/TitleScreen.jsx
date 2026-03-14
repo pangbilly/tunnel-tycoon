@@ -130,8 +130,8 @@ export default function TitleScreen({ onStart, onLoad }) {
       </div>
 
       {/* Version */}
-      <div className="absolute bottom-4 text-gray-700 text-[10px] font-mono">
-        v2.0 • Turn-Based Fleet Management
+      <div className="absolute bottom-4 text-gray-500 text-sm font-mono bg-gray-800/50 px-4 py-1.5 rounded-full border border-gray-700/50">
+        v2.1 • Turn-Based Fleet Management
       </div>
 
       {/* Delete save confirm */}
