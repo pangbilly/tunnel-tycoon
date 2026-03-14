@@ -6,7 +6,7 @@ export default function CompetitorPanel({ players, activeProjects, onClose }) {
   if (aiPlayers.length === 0) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 animate-fade-in" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 w-full max-w-lg animate-pop-in max-h-[80vh] overflow-y-auto custom-scrollbar">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-black text-white">🏢 Competitor Intel</h3>

@@ -17,7 +17,7 @@ export default function YearEndScreen({ yearEndStats, onContinue }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/90 flex items-center justify-center p-4 animate-fade-in" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 sm:p-8 w-full max-w-lg animate-pop-in">
         {/* Header */}
         <div className="text-center mb-6">

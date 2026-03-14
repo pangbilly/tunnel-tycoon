@@ -12,7 +12,7 @@ export default function BiddingModal({ project, playerCash, playerFleet, onBid, 
   const maxBid = Math.round(BID_MAX * 100);
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 animate-fade-in modal-overlay" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 w-full max-w-md animate-pop-in">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">

@@ -10,7 +10,7 @@ export default function HireModal({ onHire, onClose, playerCash }) {
   const sizes = [600, 1200, 1500, 1800];
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 animate-fade-in" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 w-full max-w-sm animate-pop-in">
         <h3 className="text-lg font-black text-white mb-1">Hire TBM</h3>
         <p className="text-xs text-gray-500 font-mono mb-4">Temporary addition to your fleet</p>

@@ -136,7 +136,7 @@ export default function TitleScreen({ onStart, onLoad }) {
 
       {/* Delete save confirm */}
       {showSavePrompt && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 animate-fade-in">
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center animate-fade-in" style={{ zIndex: 9999 }}>
           <div className="bg-gray-900 border border-gray-700 rounded-xl p-6 w-80 animate-pop-in">
             <h3 className="text-white font-bold mb-2">Delete saved game?</h3>
             <p className="text-gray-400 text-sm mb-4">This cannot be undone.</p>

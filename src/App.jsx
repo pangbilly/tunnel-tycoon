@@ -164,7 +164,7 @@ export default function App() {
           />
         </div>
 
-        <div className="flex-1 p-2 flex items-center justify-center">
+        <div className="flex-1 p-2 flex items-center justify-center" style={{ isolation: 'isolate', zIndex: 0 }}>
           <div className="w-full h-full" style={{ maxWidth: '650px', height: 'calc(100vh - 100px)' }}>
             <UKMap
               projects={state.activeProjects}
@@ -204,7 +204,7 @@ export default function App() {
 
         <div className="flex-1 overflow-y-auto p-2 pb-16 custom-scrollbar">
           {mobileTab === 'map' && (
-            <div className="w-full" style={{ height: 'calc(100vh - 170px)' }}>
+            <div className="w-full" style={{ height: 'calc(100vh - 170px)', isolation: 'isolate', zIndex: 0 }}>
               <UKMap
                 projects={state.activeProjects}
                 yards={YARDS}

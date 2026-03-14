@@ -44,7 +44,7 @@ export default function TutorialOverlay({ step, onNext, onSkip }) {
   const progress = ((step + 1) / TUTORIAL_STEPS.length) * 100;
 
   return (
-    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 animate-fade-in" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 w-full max-w-md animate-pop-in">
         {/* Progress bar */}
         <div className="w-full bg-gray-800 rounded-full h-1 mb-4">

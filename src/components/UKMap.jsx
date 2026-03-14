@@ -207,7 +207,7 @@ export default function UKMap({ projects, yards, selectedProject, onSelectProjec
     <div
       ref={mapRef}
       className="w-full rounded-xl overflow-hidden"
-      style={{ height: '100%', minHeight: '400px' }}
+      style={{ height: '100%', minHeight: '400px', position: 'relative', zIndex: 1 }}
     />
   );
 }

@@ -2,7 +2,7 @@ export default function EventModal({ event, onChoice }) {
   if (!event) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 animate-fade-in" style={{ zIndex: 9999 }}>
       <div className="glass-panel rounded-2xl p-6 w-full max-w-md animate-pop-in">
         {/* Icon and title */}
         <div className="text-center mb-4">

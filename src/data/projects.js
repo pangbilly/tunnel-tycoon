@@ -123,7 +123,8 @@ export function generateProjects(seed = Date.now()) {
       const revenue = Math.round(durationWeeks * randInt(minR, maxR));
 
       // Start date: spread across the year
-      const weekOffset = year * 52 + randInt(0, 48);
+      // First 3 projects each year start in weeks 0-2 (guaranteed early action)
+      const weekOffset = year * 52 + (i < 3 ? i : randInt(3, 48));
       const startDate = new Date(2026, 3, 1);
       startDate.setDate(startDate.getDate() + weekOffset * 7);
 

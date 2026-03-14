@@ -8,6 +8,18 @@ body {
 /* Leaflet container fix for dark theme */
 .leaflet-container {
     background: #0f172a;
+    z-index: 1;
+}
+
+/* Ensure Leaflet doesn't create stacking context issues */
+.leaflet-top,
+.leaflet-bottom {
+    z-index: 10 !important;
+}
+
+/* Game modals must always be above everything */
+.modal-overlay {
+    z-index: 9999 !important;
 }
 
 /* Pulse animation for waiting project markers */
