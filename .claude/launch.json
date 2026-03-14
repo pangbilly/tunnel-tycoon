@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "tunnel-tycoon",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["vite", "--port", "5173"],
-      "port": 5173
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--port", "5174"],
+      "port": 5174
     }
   ]
 }
